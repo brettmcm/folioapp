@@ -15,9 +15,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
+      <Image
+      className={styles.bgimg}
+      src="/me.png"
+      alt="Picture of the author"
+      width={500}
+      height={500}
+      />
       <main className={styles.mainContent}>
         <h1 className={inter.className}>— brettmcm.me</h1>
-        <h2 className={inter.className}>Entirely obsessed with details and space as a meditation on design. Maker of <a href="http://www.moks.app">Moks</a>. Currently working as a Product Design Manager at <a href="http://www.experian.com/">Experian</a>.</h2>
+        <h2 className={inter.className}>Entirely obsessed with details and space as a meditation on design. Maker of <a href="http://moks.app">Moks</a>. Currently working as a Product Design Manager at <a href="http://www.experian.com/">Experian</a>.</h2>
       </main>
     </>
   )
