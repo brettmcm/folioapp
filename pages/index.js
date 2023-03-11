@@ -17,7 +17,7 @@ export default function Home() {
       
       <main className={styles.mainContent}>
         <h1 className={inter.className}>— brettmcm.me</h1>
-        <h2 className={inter.className}>Entirely obsessed with details and space as a meditation on design. Maker of <a href="http://www.moks.app">Moks</a>. Currently working as a Product Design Manager at <a href="http://www.experian.com/">Experian</a></h2>
+        <h2 className={inter.className}>Entifrely obsessed with details and space as a meditation on design. Maker of <a href="http://www.moks.app">Moks</a>. Currently working as a Product Design Manager at <a href="http://www.experian.com/">Experian</a></h2>
       </main>
     </>
   )
