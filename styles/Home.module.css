@@ -1,24 +1,68 @@
 .mainContent {
   position: fixed;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   padding: 1em;
 }
 
-.mainContent h1 {
-  font-size: 1.05rem;
-  font-weight:500;
-  opacity: 0.4;
+.addButton {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  background: var(--primary);
+  transition: all 0.1s cubic-bezier(.71,0,.33,1.56);
+  overflow: hidden;
+  }
+
+.addButton svg {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.2s cubic-bezier(.71,0,.33,1.56);
+  color: white;
 }
 
-.mainContent h2 {
-  font-size: 1rem;
-  font-weight:300;
+.addButtonHighlight {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: var(--cursor-y);
+  left: var(--cursor-x);
+  transform: translate(-50%, -50%);
+  transition: all 0.1s;
+  background: -webkit-radial-gradient(var(--cursor-x) var(--cursor-y),rgba(255,255,255,0.05), rgba(255,255,255,0));
+  background: radial-gradient(at var(--cursor-x) var(--cursor-y),rgba(255,255,255,0.05), rgba(255,255,255,0));
+  pointer-events: none;
 }
 
-.mainContent h2 a {
-  text-decoration: underline;
+
+.addButtonActive {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  transition: all 0.1s cubic-bezier(.71,0,.33,1.56);
+  background: rgba(15,15,15, 0.5);
+  border: 1px solid rgba(50,50,50,1);
+  overflow: hidden;
+}
+
+.addButtonActive svg {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.2s cubic-bezier(.71,0,.33,1.56);
+  transform: rotate(-45deg);
+  color: rgba(150,150,150,1);
 }
